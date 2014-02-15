@@ -6,6 +6,9 @@ apt-get install -y tmux
 apt-get install -y tree
 apt-get install -y tig
 
+aptitude install locales
+dpkg-reconfigure locales
+
 # dotfiles copy
 cp /share/.bashrc /home/vagrant/.bashrc
 cp /share/.vimrc /home/vagrant/.vimrc
