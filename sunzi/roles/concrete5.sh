@@ -2,6 +2,7 @@
 # apacheの設定
 cp /share/apache/concrete5 /etc/apache2/sites-available/
 ln -s /etc/apache2/sites-available/concrete5 /etc/apache2/sites-enabled/concrete5
+/etc/init.d/apache2 restart
 
 # concrete5 source checkout
 git clone https://github.com/concrete5japan/concrete5.git /home/vagrant/concrete5/
